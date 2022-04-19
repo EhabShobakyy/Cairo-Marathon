@@ -1,0 +1,89 @@
+.countdown {
+    background-color: $yellow;
+    width: 60%;
+    height: 160px;
+    margin: auto;
+    margin-top: 30px;
+    border: 10px solid rgb(36, 36, 83);
+    border-radius: 10px;
+    @media (max-width:370px) {
+      width: 90%;
+    }
+    &__headline{
+        padding-top: 15px;
+        font-size: 22px;
+        font-weight: bold;
+         text-transform: uppercase;
+         color: rgb(36, 36, 83);
+         @media (max-width:769px){
+           padding-top: 0px;
+         }
+    }
+
+&__container {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+}
+.countdown__content--item {
+  display: inline-block;
+  font-size: 20px;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $blue;
+  @media (max-width:769px) {
+    padding: 10px;
+  }
+  span{
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  color: $blue;
+  }
+}
+
+.countdown__emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.countdown__emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  .countdown__headline {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+  
+  .countdown__content--item {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  .countdown__content--item span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+
+
+.countdown__style{
+    position: relative;
+    width: 38px;
+    height: calc(100vh - 250px);
+    background-color: $blue;
+    margin: auto;
+    border-left: 8px solid $yellow;
+}
+// .countdown__style::after{
+//     content: '';
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     top: 0;
+//     right: 0;
+//     background-color: red;
+// }

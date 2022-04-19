@@ -1,0 +1,28 @@
+.faqs {
+    padding: 25px;
+    @media(max-width:769px){
+        padding: 10px;
+    }
+    &__content{
+        margin: 25px 0px;
+        padding: 0px 25px;
+         @media(max-width:769px){
+        padding: 0px;
+        &:first-child{
+            margin: 0px 0px 20px 0px;
+        }
+    }
+        &--head{
+        color: $main-color;
+        font-size: 25px;
+        text-transform: uppercase;
+         @media(max-width:769px){
+        font-size: 20px;
+    }
+        }
+        &--text{
+            color: $blue;
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.race {
+    padding: 25px;
+    margin: 30px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+       @media (max-width:769px) {
+            grid-template-columns: 1fr;
+            margin: 0px;
+            gap: 10px;
+            padding: 10px;
+        }  
+    &__content{    
+        padding: 0px 20px;
+        @media (max-width:769px) {
+            padding: 0px;
+        }
+        &--headline{
+            color: $main-color;
+            font-size: 25px;
+            text-transform: uppercase;
+            @media(max-width:769px){
+        font-size: 20px;
+    }
+        }
+        &--text{
+            font-size: 12px;
+            color: $blue;
+            line-height: 18px;
+            margin: 15px 0px;
+        }
+    }
+}
+
+ 
