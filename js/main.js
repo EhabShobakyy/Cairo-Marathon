@@ -28,7 +28,7 @@ $(document).ready(function() {
       mm = String(today.getMonth() + 1).padStart(2, "0"),
       yyyy = today.getFullYear(),
       nextYear = yyyy + 1,
-      dayMonth = "05/13/",
+      dayMonth = "05/20/",
       birthday = dayMonth + yyyy;
   
   today = mm + "/" + dd + "/" + yyyy;
@@ -60,4 +60,28 @@ $(document).ready(function() {
   }());
 
 
- 
+ $(document).ready(function() {
+  $(".customer-logos").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
+  });
+});

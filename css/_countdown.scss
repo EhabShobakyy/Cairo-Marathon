@@ -9,6 +9,10 @@
     @media (max-width:370px) {
       width: 90%;
     }
+    @media (max-width:769px){
+      height: unset;
+      width: 90%;
+    }
     &__headline{
         padding-top: 15px;
         font-size: 22px;
@@ -77,6 +81,9 @@
     background-color: $blue;
     margin: auto;
     border-left: 8px solid $yellow;
+    @media (max-width:769px) {
+      height: unset;
+    }
 }
 // .countdown__style::after{
 //     content: '';
