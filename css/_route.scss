@@ -38,10 +38,10 @@
     }
             }
             &--img{
-                width: 70%;
-                @media (max-width:769px) {
-                    width: 100%;
-                }
+                width: 100%;
+                // @media (max-width:769px) {
+                //     width: 100%;
+                // }
             }
         }
     }
