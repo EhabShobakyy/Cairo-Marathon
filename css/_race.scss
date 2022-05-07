@@ -34,10 +34,11 @@
         }
     }
         &--img {
-            text-align: center;
-            width: 100%;
             img {
-                width: 100%;
+                width: 320px;
+                  @media (max-width:769px) { 
+                      width: 100%;
+                  }
             }
         }
     }

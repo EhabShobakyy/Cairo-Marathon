@@ -53,6 +53,12 @@
      object-fit: cover;
 }
 
+@media (max-width: 952px) {
+  .nav--logo {
+    margin-bottom: 14px;
+  }
+}
+
 .nav__list {
   float: right;
   margin-right: 20px;
@@ -79,6 +85,12 @@
   line-height: 80px;
   cursor: pointer;
   display: none;
+}
+
+@media (max-width: 952px) {
+  .nav .check-btn {
+    margin-right: 20px;
+  }
 }
 
 .nav #check {
@@ -213,8 +225,15 @@
   padding: 10px 0px;
 }
 
-.register-btn img {
-  width: 150px;
+.register-btn p {
+  background-color: #242453;
+  width: 175px;
+  color: white;
+  text-decoration: unset;
+  border-radius: 25px 25px;
+  padding: 8px;
+  margin: auto;
+  font-size: 18px;
 }
 
 .countdown {
@@ -242,7 +261,7 @@
 
 .countdown__headline {
   padding-top: 15px;
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
   color: #242453;
@@ -278,7 +297,7 @@
 
 .countdown__content--item span {
   display: block;
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold;
   color: #005CB9;
 }
@@ -461,13 +480,14 @@
   margin: 15px 0px;
 }
 
-.race__content--img {
-  text-align: center;
-  width: 100%;
+.race__content--img img {
+  width: 320px;
 }
 
-.race__content--img img {
-  width: 100%;
+@media (max-width: 769px) {
+  .race__content--img img {
+    width: 100%;
+  }
 }
 
 .route {
@@ -623,8 +643,8 @@
 .partners__content {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   gap: 35px;
   margin-top: 15px;
 }
@@ -639,7 +659,7 @@
 }
 
 .partners__content--img {
-  width: 120px;
+  width: 150px;
   margin: auto;
 }
 
@@ -653,7 +673,7 @@
 }
 
 .slick-slide img {
-  width: 50%;
+  width: 70%;
 }
 
 @media (max-width: 769px) {

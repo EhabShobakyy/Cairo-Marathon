@@ -20,7 +20,7 @@
 }
     &__content{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 35px;
         margin-top: 15px;
            @media(max-width:769px){
@@ -29,7 +29,7 @@
        margin-top: 30px;
     }
         &--img{
-            width: 120px;
+            width: 150px;
             margin: auto;
         }
     }

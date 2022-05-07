@@ -12,6 +12,9 @@
     width: 195px;
     height: 49px;
     object-fit: cover;
+      @media (max-width:952px) {
+            margin-bottom: 14px;
+        }
     }
     &__list {
         float: right;
@@ -37,6 +40,9 @@
         line-height: 80px;
         cursor: pointer;
         display: none;
+          @media (max-width:952px) {
+            margin-right: 20px;
+        }
     }
     #check {
         display: none;
