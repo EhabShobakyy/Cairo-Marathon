@@ -8,7 +8,6 @@
     &__intro {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
-        height: 100vh;
         gap: 35px;
         @media (max-width:769px) {
             grid-template-columns: 1fr;
@@ -20,9 +19,10 @@
         &__content{
             &--text{
                 font-family: 'CocogoosePro';
-                line-height: 18px;
+                line-height: 25px;
                 color: $blue;
-                font-size: 11px;
+                font-size: 14px;
+                text-align: justify;
                 &:nth-child(3){
                     margin: 15px 0px;
                 }

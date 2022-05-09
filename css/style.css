@@ -356,7 +356,6 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  height: 100vh;
   gap: 35px;
 }
 
@@ -374,9 +373,10 @@
 
 .about__intro__content--text {
   font-family: 'CocogoosePro';
-  line-height: 18px;
+  line-height: 25px;
   color: #005CB9;
-  font-size: 11px;
+  font-size: 14px;
+  text-align: justify;
 }
 
 .about__intro__content--text:nth-child(3) {
@@ -439,6 +439,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -446,7 +449,7 @@
   margin-top: 0px;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 991px) {
   .race__content {
     padding: 0px;
     -webkit-box-orient: vertical;
@@ -457,7 +460,13 @@
 }
 
 .race__content__body {
-  padding: 0px 5px 5px 0px;
+  width: 70%;
+}
+
+@media (max-width: 991px) {
+  .race__content__body {
+    width: 100%;
+  }
 }
 
 .race__content__body--headline {
@@ -468,25 +477,112 @@
 
 @media (max-width: 769px) {
   .race__content__body--headline {
-    font-size: 20px;
+    margin-top: 10px;
   }
 }
 
 .race__content__body--text {
   font-family: 'CocogoosePro';
-  font-size: 11px;
+  font-size: 16px;
+  line-height: 30px;
   color: #005CB9;
-  line-height: 18px;
-  margin: 15px 0px;
+  text-align: justify;
+  margin: 10px 0px;
+}
+
+@media (max-width: 769px) {
+  .race__content__body--text {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 5px 0px;
+  }
+}
+
+.race__content--img {
+  text-align: right;
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .race__content--img {
+    width: 100%;
+  }
 }
 
 .race__content--img img {
   width: 320px;
+  height: 100%;
+}
+
+@media (min-width: 1200px) {
+  .race__content--img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 991px) {
+  .race__content--img img {
+    width: 100%;
+  }
+}
+
+.tabs {
+  font-family: 'Sunshine Formula';
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  font-size: 25px;
 }
 
 @media (max-width: 769px) {
-  .race__content--img img {
-    width: 100%;
+  .tabs {
+    margin: 0px;
+    font-size: 16px;
+  }
+}
+
+.tabs .active-tab {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: none;
+  position: relative;
+  color: white;
+  background-color: #005CB9;
+}
+
+.tabs .active-tab:after {
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  content: "";
+  bottom: -0.1em;
+  left: 0;
+  background: white;
+}
+
+.tabs li {
+  display: inline-block;
+  cursor: pointer;
+  color: #3a5ea7;
+  padding: 5px 10px;
+}
+
+.tabs-content {
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs-content li {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .tabs-content {
+    margin: 0px;
   }
 }
 
@@ -647,6 +743,8 @@
       grid-template-columns: repeat(3, 1fr);
   gap: 35px;
   margin-top: 15px;
+  grid-row-gap: 0px;
+  width: 70%;
 }
 
 @media (max-width: 769px) {
