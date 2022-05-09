@@ -26,9 +26,10 @@
         grid-row-gap: 0px;
         width: 70%;
            @media(max-width:769px){
-       grid-template-columns: 1fr;
+       grid-template-columns: repeat(2, 1fr);
        gap: 30px;
        margin-top: 30px;
+       width: 100%;
     }
         &--img{
             width: 150px;
