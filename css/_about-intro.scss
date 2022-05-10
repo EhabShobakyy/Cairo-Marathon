@@ -1,62 +1,61 @@
 .about {
-    padding: 25px;
-    margin-top: 30px;
-    @media(max-width:769px){
-        padding: 10px;
-        margin-top: 0px;
+  padding: 25px;
+  margin-top: 30px;
+  @media (max-width: 769px) {
+    padding: 10px;
+    margin-top: 0px;
+  }
+  &__intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 35px;
+    @media (max-width: 769px) {
+      grid-template-columns: 1fr;
+      height: unset;
     }
-    &__intro {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        gap: 35px;
-        @media (max-width:769px) {
-            grid-template-columns: 1fr;
-            height: unset;
-        }
-        img {
-            width: 100%;
-        }
-        &__content{
-            &--text{
-                font-family: 'CocogoosePro';
-                line-height: 25px;
-                color: $blue;
-                font-size: 14px;
-                text-align: justify;
-                &:nth-child(3){
-                    margin: 15px 0px;
-                }
-            }
-        }
+    img {
+      width: 100%;
     }
-    &__kit{
-        
-        &--headline{
-            width: 40%;
-            display: block;
-            margin: auto;
-             @media (max-width:769px) {
-                    width: 100%;
-                    margin-top: 35px;
-                }
+    &__content {
+      &--text {
+        font-family: "CocogoosePro";
+        line-height: 25px;
+        color: $blue;
+        font-size: 14px;
+        text-align: justify;
+        &:nth-child(3) {
+          margin: 15px 0px;
         }
-        &__content{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 35px;
-              @media (max-width:769px) {
-            grid-template-columns: 1fr;
-        }
-        &--text{
-            color: $blue;
-            font-size: 25px;
-            text-transform: uppercase;
-            text-align: center;
-            padding-top: 25px;
-        }
-            img{
-                width: 100%;
-            }
-        }
+      }
     }
+  }
+  &__kit {
+    &--headline {
+      width: 40%;
+      display: block;
+      margin: auto;
+      @media (max-width: 769px) {
+        width: 100%;
+        margin-top: 35px;
+      }
+    }
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 35px;
+      @media (max-width: 769px) {
+        grid-template-columns: 1fr;
+      }
+      &--text {
+        color: $blue;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 25px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
 }

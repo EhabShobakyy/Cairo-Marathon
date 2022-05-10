@@ -1,106 +1,104 @@
 .nav {
-    height: 60px;
-    background-color: $main-color;
-    width: 100%;
-    line-height: 60px;
-    z-index: 10;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-evenly;
-    &--logo{
+  height: 60px;
+  background-color: $main-color;
+  width: 100%;
+  line-height: 60px;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  &--logo {
     width: 195px;
     height: 49px;
     object-fit: cover;
-      @media (max-width:952px) {
-            margin-bottom: 14px;
-        }
+    @media (max-width: 952px) {
+      margin-bottom: 14px;
     }
-    &__list {
-        float: right;
-        margin-right: 20px;
-        &__item {
-            display: inline-block;
-            a{
-                text-decoration: none;
-                color: $blue;
-                font-size: 14px;
-                text-transform: uppercase;
-                padding: 7px 10px;
-                border-radius: 3px;
-                // &active,&:hover { }
-            }
-        }
+  }
+  &__list {
+    float: right;
+    margin-right: 20px;
+    &__item {
+      display: inline-block;
+      a {
+        text-decoration: none;
+        color: $blue;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 7px 10px;
+        border-radius: 3px;
+        // &active,&:hover { }
+      }
     }
-    .check-btn{
-        font-size: 30px;
-        color: white;
-        float: right;
-        margin-right: 40px;
-        line-height: 80px;
-        cursor: pointer;
-        display: none;
-          @media (max-width:952px) {
-            margin-right: 20px;
-        }
+  }
+  .check-btn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+    @media (max-width: 952px) {
+      margin-right: 20px;
     }
-    #check {
-        display: none;
-    }
-    .active {
-        color: white;
-    }
-
+  }
+  #check {
+    display: none;
+  }
+  .active {
+    color: white;
+  }
 }
-@media (max-width:952px) {
-    .nav{
-        line-height: 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-     &__list {
-        position: fixed;
-        width: 100%;
-         height: calc(100vh - 60px);
-        background-color: #00A7E1;
-        top: 60px;
-        left: -100%;
-        transition: all .5s;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        z-index: 20;
-        &__item{
-                 display: block;
+@media (max-width: 952px) {
+  .nav {
+    line-height: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+      position: fixed;
+      width: 100%;
+      height: calc(100vh - 60px);
+      background-color: #00a7e1;
+      top: 60px;
+      left: -100%;
+      transition: all 0.5s;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 20;
+      &__item {
+        display: block;
         padding: 20px 0px;
         width: 100%;
-            a{
-                font-size: 20px;
-                &:hover{
-                }
-                &active{
-                    color: $white;
-                    background: none !important;
-                }
-            }
+        a {
+          font-size: 20px;
+          &:hover {
+          }
+          &active {
+            color: $white;
+            background: none !important;
+          }
         }
+      }
     }
-    }
-    lable.logo{
-        font-size: 30px;
-        padding-left: 50px;
-        order: 1;
-    }
-  
-    .check-btn{
-        display: block !important;
-        order: 2;
-    }
-    #check:checked ~ ul {
-        left: 0;
-    }
+  }
+  lable.logo {
+    font-size: 30px;
+    padding-left: 50px;
+    order: 1;
+  }
 
+  .check-btn {
+    display: block !important;
+    order: 2;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
 }

@@ -118,11 +118,11 @@
     position: fixed;
     width: 100%;
     height: calc(100vh - 60px);
-    background-color: #00A7E1;
+    background-color: #00a7e1;
     top: 60px;
     left: -100%;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -171,7 +171,7 @@
 
 #owl-demo .item {
   height: 80vh;
-  color: #FFF;
+  color: #fff;
   border-radius: 3px;
   text-align: center;
   position: relative;
@@ -185,10 +185,10 @@
 
 /* to remove slide effect  css */
 .animated {
-  -webkit-animation-duration: 0 ms  !important;
-  animation-duration: 0 ms  !important;
-  -webkit-animation-fill-mode: both  !important;
-  animation-fill-mode: both  !important;
+  -webkit-animation-duration: 0 ms !important;
+  animation-duration: 0 ms !important;
+  -webkit-animation-fill-mode: both !important;
+  animation-fill-mode: both !important;
 }
 
 .fadeOut {
@@ -309,7 +309,7 @@
 
 .countdown__emoji span {
   font-size: 4rem;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
 }
 
 @media all and (max-width: 768px) {
@@ -372,7 +372,7 @@
 }
 
 .about__intro__content--text {
-  font-family: 'CocogoosePro';
+  font-family: "CocogoosePro";
   line-height: 25px;
   color: #005CB9;
   font-size: 14px;
@@ -482,7 +482,7 @@
 }
 
 .race__content__body--text {
-  font-family: 'CocogoosePro';
+  font-family: "CocogoosePro";
   font-size: 16px;
   line-height: 30px;
   color: #005CB9;
@@ -527,7 +527,7 @@
 }
 
 .tabs {
-  font-family: 'Sunshine Formula';
+  font-family: "Sunshine Formula";
   margin: 20px;
   padding: 0;
   list-style: none;
@@ -692,7 +692,7 @@
 }
 
 .faqs__content--text {
-  font-family: 'CocogoosePro';
+  font-family: "CocogoosePro";
   line-height: 18px;
   color: #005CB9;
   font-size: 11px;
@@ -1022,7 +1022,7 @@
 }
 
 .container__header--date {
-  font-family: 'CocogoosePro';
+  font-family: "CocogoosePro";
   line-height: 18px;
   font-size: 40px;
   color: white;
@@ -1049,7 +1049,7 @@
 
 .container__content__body {
   font-weight: 100;
-  font-family: 'CocogoosePro';
+  font-family: "CocogoosePro";
   font-size: 14px;
 }
 
@@ -1072,7 +1072,7 @@
 .container__content__body__table {
   width: 50%;
   margin: auto;
-  font-family: 'CocogoosePro' !important;
+  font-family: "CocogoosePro" !important;
 }
 
 @media (max-width: 920px) {
@@ -1110,7 +1110,7 @@
 }
 
 .container__footer {
-  font-family: 'CocogoosePro';
+  font-family: "CocogoosePro";
   font-size: 14px;
   text-align: left;
   padding: 25px 50px;

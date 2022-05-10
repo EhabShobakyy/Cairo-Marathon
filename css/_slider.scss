@@ -1,50 +1,47 @@
-#owl-demo .item{
+#owl-demo .item {
   height: 80vh;
-  color: #FFF;
+  color: #fff;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   text-align: center;
   position: relative;
-  @media (max-width:769px) {
+  @media (max-width: 769px) {
     height: 50%;
   }
-
 }
 
 /* to remove slide effect  css */
- .animated  {
-      -webkit-animation-duration : 0 ms  !important;
-      animation-duration : 0 ms  !important;
-      -webkit-animation-fill-mode : both  !important;
-      animation-fill-mode : both  !important;
-    }  
-    
-    
-    .fadeOut  {
-      -webkit-animation-name : fadeOut  ;
-      animation-name : fadeOut  ;
-    }  
-    @-webkit-keyframes  fadeOut  {
-      0% {
-        opacity : 0   ;
-      }  
-      100% {
-        opacity : 0   ;
-      }  
-    }
-    @keyframes  fadeOut  {
-      0% {
-        opacity : 0   ;
-      }  
-      100% {
-        opacity : 0   ;
-      }  
-    }
+.animated {
+  -webkit-animation-duration: 0 ms !important;
+  animation-duration: 0 ms !important;
+  -webkit-animation-fill-mode: both !important;
+  animation-fill-mode: both !important;
+}
 
-    @media (max-width:769px)
-    {
-    .owl-carousel .owl-item img {
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 769px) {
+  .owl-carousel .owl-item img {
     height: 50% !important;
-    }
-    }
+  }
+}

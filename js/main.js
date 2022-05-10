@@ -1,20 +1,23 @@
-$(document).ready(function() {
+
+  
+  // ***********************************************************************************************************************************************************************************************************************
+  //                                                                                        Home Page
+  // ************************************************************************************************************************************************************************************************************************ 
+
+  //                                                                                        Slider
+$(document).ready(function () {
  
   $("#owl-demo").owlCarousel({
     navigation : true,
     items : 1, 
     loop:true,
-       nav:false,
+    nav:false,
     animateOut: 'fadeOut',
-       animateIn: 'fadeIn',
+    animateIn: 'fadeIn',
   });
  
 });
-
-
-
-
-
+//                                                                                           CountDown Counter
 (function () {
   const second = 1000,
         minute = second * 60,
@@ -35,7 +38,6 @@ $(document).ready(function() {
   if (today > birthday) {
     birthday = dayMonth + nextYear;
   }
-  //end
   
   const countDown = new Date(birthday).getTime(),
       x = setInterval(function() {    
@@ -57,9 +59,11 @@ $(document).ready(function() {
         }
         //seconds
       }, 0)
-  }());
+}());
+    //                                                                                      End Of CountDown Counter
 
 
+  //                                                                                        LOGO Slider
  $(document).ready(function() {
   $(".customer-logos").slick({
     slidesToShow: 4,
@@ -86,6 +90,12 @@ $(document).ready(function() {
   });
  });
 
+
+ 
+  // ***********************************************************************************************************************************************************************************************************************
+  //                                                                                        INFO Page
+  // ************************************************************************************************************************************************************************************************************************ 
+  //                                                                                        Info Tabs
 $(function () {
 
   var activeIndex = $('.active-tab').index(),

@@ -1,6 +1,5 @@
-
 .customer-logos {
-  background: white ;
+  background: white;
 }
 
 /* Slider */
@@ -11,10 +10,10 @@
 .slick-slide img {
   width: 70%;
 }
-@media (max-width:769px){
-    .slick-slide img {
-  width: 100%;
-}
+@media (max-width: 769px) {
+  .slick-slide img {
+    width: 100%;
+  }
 }
 .slick-slider {
   position: relative;
@@ -127,7 +126,7 @@
 }
 
 .slick-slide img {
-//   width: 100%;
+  //   width: 100%;
 }
 
 .slick-slider {

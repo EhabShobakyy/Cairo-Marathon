@@ -1,118 +1,117 @@
 .race {
-    padding: 25px;
-       @media (max-width:769px) {
-            margin: 0px;
-            gap: 10px;
-            padding: 10px;
-        }  
-    &__content{    
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-        &:first-child{
-            margin-top: 0px;
-        }
-        @media (max-width:991px) {
-            padding: 0px;
-            flex-direction: column;
-        }
-        &__body {
-            width: 70%;
-              @media (max-width:991px) {
-            width: 100%;  
-            }
-        &--headline{
-            color: $main-color;
-            font-size: 25px;
-            text-transform: uppercase;
-            @media(max-width:769px){
-       margin-top: 10px;
+  padding: 25px;
+  @media (max-width: 769px) {
+    margin: 0px;
+    gap: 10px;
+    padding: 10px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    &:first-child {
+      margin-top: 0px;
     }
-        }
-        &--text{
-            font-family: 'CocogoosePro';
-            font-size: 16px;
-            line-height: 30px;
-            color: $blue;
-            text-align: justify;
-            margin: 10px 0px;
-              @media (max-width:769px) {
-                font-size: 12px;
-                line-height: 20px;
-                margin: 5px 0px;
-              }
-        }
+    @media (max-width: 991px) {
+      padding: 0px;
+      flex-direction: column;
     }
-        &--img {
-            text-align: right;
-            width: 50%;
-            @media (max-width:991px) {
-                width: 100%;
-            }
-            img {
-                width: 320px;
-                height: 100%;
-                 @media (min-width:1200px) {
-                     width: 70%;
-                 }
-                  @media (max-width:991px) { 
-                      width: 100%;
-                  }
-            }
+    &__body {
+      width: 70%;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+      &--headline {
+        color: $main-color;
+        font-size: 25px;
+        text-transform: uppercase;
+        @media (max-width: 769px) {
+          margin-top: 10px;
         }
+      }
+      &--text {
+        font-family: "CocogoosePro";
+        font-size: 16px;
+        line-height: 30px;
+        color: $blue;
+        text-align: justify;
+        margin: 10px 0px;
+        @media (max-width: 769px) {
+          font-size: 12px;
+          line-height: 20px;
+          margin: 5px 0px;
+        }
+      }
     }
+    &--img {
+      text-align: right;
+      width: 50%;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+      img {
+        width: 320px;
+        height: 100%;
+        @media (min-width: 1200px) {
+          width: 70%;
+        }
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
- 
+
 .tabs {
-  font-family: 'Sunshine Formula';
+  font-family: "Sunshine Formula";
   margin: 20px;
   padding: 0;
-	list-style: none;
-	position: relative;
-	border-bottom: 1px solid #ccc;
-    font-size: 25px;
-      @media (max-width:769px) {
-          margin: 0px;
-          font-size: 16px;
-      }
-	.active-tab {
-		border-top: 1px solid #ccc;
-		border-left: 1px solid #ccc;
-		border-right: 1px solid #ccc;
-		border-bottom: none;
-		position: relative;
-		color: $white;
-        background-color: $blue;
-    
-		&:after {
-			width: 100%;
-			height: 2px;
-			position: absolute;
-			content: "";
-			bottom: -0.1em;
-			left: 0;
-			background: white;
-		}
-	}
-  
-	li {
-		display: inline-block;
-		cursor: pointer;
-		color: #3a5ea7;
-		padding: 5px 10px;
-	}
+  list-style: none;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  font-size: 25px;
+  @media (max-width: 769px) {
+    margin: 0px;
+    font-size: 16px;
+  }
+  .active-tab {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: none;
+    position: relative;
+    color: $white;
+    background-color: $blue;
+
+    &:after {
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      content: "";
+      bottom: -0.1em;
+      left: 0;
+      background: white;
+    }
+  }
+
+  li {
+    display: inline-block;
+    cursor: pointer;
+    color: #3a5ea7;
+    padding: 5px 10px;
+  }
 }
 
 .tabs-content {
-	margin: 20px;
-	padding: 0;
-	list-style: none;
-  
-	li {
-		display: none;
-	}
-    @media (max-width:769px) {
-          margin: 0px;
-      }
-      
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: none;
+  }
+  @media (max-width: 769px) {
+    margin: 0px;
+  }
 }
